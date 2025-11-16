@@ -166,13 +166,53 @@ body {
 
 /* ===== LAYOUT ===== */
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: var(--space-lg);
+  padding: var(--space-xl);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: var(--space-xl);
+  gap: var(--space-2xl);
+}
+
+/* Desktop-specific enhancements */
+@media (min-width: 1024px) {
+  .container {
+    padding: var(--space-2xl);
+  }
+  
+  .app-header {
+    padding: var(--space-2xl) 0;
+  }
+  
+  .greeting-text {
+    font-size: 3rem;
+  }
+  
+  .greeting-icon {
+    font-size: 4rem;
+  }
+  
+  .verse-container {
+    padding: var(--space-2xl) var(--space-2xl);
+  }
+  
+  .verse-main-text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+  
+  /* Two-column layout for journal and favorites on desktop */
+  .journal-favorites-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-2xl);
+    align-items: start;
+  }
+  
+  .journal-section {
+    margin-bottom: 0;
+  }
 }
 
 /* ===== HEADER SECTION ===== */
