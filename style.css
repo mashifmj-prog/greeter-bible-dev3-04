@@ -1794,3 +1794,82 @@ body {
   border-top: 1px solid var(--border-color);
   color: var(--text-secondary);
 }
+
+/* ===== EMERGENCY FIX FOR SHARE MODAL ===== */
+.share-options {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 15px !important;
+  padding: 20px !important;
+}
+
+.share-option-btn {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  min-height: 80px !important;
+  padding: 15px !important;
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 12px !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  text-align: center !important;
+}
+
+.share-option-btn:hover {
+  background: var(--bg-primary) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: var(--shadow-md) !important;
+}
+
+.share-option-btn .icon {
+  font-size: 1.5rem !important;
+}
+
+/* Force all modal content to be visible */
+.modal-content * {
+  color: var(--text-primary) !important;
+}
+
+.image-options * {
+  color: var(--text-primary) !important;
+}
+
+.action-buttons {
+  display: flex !important;
+  gap: 10px !important;
+  margin: 20px 0 !important;
+}
+
+.action-btn {
+  flex: 1 !important;
+  padding: 12px 20px !important;
+  border: none !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  font-size: 1rem !important;
+  min-height: 44px !important;
+}
+
+.action-btn.primary {
+  background: var(--gradient-primary) !important;
+  color: white !important;
+}
+
+.action-btn.secondary {
+  background: var(--bg-secondary) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.action-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: var(--shadow-md) !important;
+}
