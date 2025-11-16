@@ -1395,24 +1395,24 @@ function shareAsText() {
     // Create text preview modal
     const textPreviewHTML = `
       <div class="modal" id="textPreviewModal">
-        <div class="modal-content" style="max-width: 500px;">
+        <div class="modal-content" style="max-width: 500px; background: var(--card-bg); color: var(--text-primary);">
           <div class="modal-header">
-            <h2>Share as Text</h2>
+            <h2 style="color: white;">Share as Text</h2>
             <button class="close-btn">&times;</button>
           </div>
           <div class="text-preview-container" style="padding: 20px;">
-            <div class="preview-text" style="background: var(--bg-secondary); padding: 15px; border-radius: 8px; margin-bottom: 15px; font-size: 1rem; line-height: 1.5; color: var(--text-primary);">
+            <div class="preview-text" style="background: var(--bg-secondary); padding: 15px; border-radius: 8px; margin-bottom: 15px; font-size: 1rem; line-height: 1.5; color: var(--text-primary); border: 1px solid var(--border-color);">
               ${currentVerse}
             </div>
-            <div class="attribution-option" style="margin: 15px 0; padding: 12px; background: var(--bg-secondary); border-radius: 8px;">
-              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+            <div class="attribution-option" style="margin: 15px 0; padding: 12px; background: var(--bg-secondary); border-radius: 8px; border: 1px solid var(--border-color);">
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer; color: var(--text-primary);">
                 <input type="checkbox" id="includeTextAttribution" checked>
                 Include attribution link
               </label>
             </div>
             <div class="action-buttons" style="display: flex; gap: 10px;">
-              <button id="cancelTextShare" class="action-btn secondary" style="flex: 1;">Cancel</button>
-              <button id="confirmTextShare" class="action-btn primary" style="flex: 1;">Share Text</button>
+              <button id="cancelTextShare" class="action-btn secondary" style="flex: 1; background: var(--bg-secondary); color: var(--text-primary); border: 1px solid var(--border-color);">Cancel</button>
+              <button id="confirmTextShare" class="action-btn primary" style="flex: 1; background: var(--gradient-primary); color: white;">Share Text</button>
             </div>
           </div>
         </div>
